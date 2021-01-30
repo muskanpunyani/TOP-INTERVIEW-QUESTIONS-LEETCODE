@@ -1,4 +1,5 @@
-Given an integer array nums, return true if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k]. If no such indices exists, return false.
+Given an integer array nums, return true if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k]. 
+ If no such indices exists, return false.
 
  
 
@@ -34,7 +35,7 @@ class Solution {
 public:
 // time=0(n)
     bool increasingTriplet(vector<int>& nums) {
-        // it is same as longest increasing subsequence,just the subseq size need to be,can do it in that way but time=0(nlogk)
+        // it is same as longest increasing subsequence,just the subseq size need to be 3,can do it in that way but time=0(nlogk)
         // we will do this byanother method
         // take two values and check if the incoming elem is smaller than one of them or both of them,if not means it is gretaer than start 2,means soln exist
         
