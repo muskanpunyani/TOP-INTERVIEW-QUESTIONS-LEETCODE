@@ -35,6 +35,8 @@ Constraints:
 ***************
 class Solution {
 public:
+//0(logn)
+//if single digit number then only 1 and 7 is happy
     bool isHappy(int n) {
         if(n==1 || n==7)    
             return true;
