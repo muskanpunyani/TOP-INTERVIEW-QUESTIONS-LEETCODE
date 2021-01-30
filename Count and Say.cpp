@@ -35,6 +35,7 @@ Constraints:
 
 
 *******************************************************************
+// complexity=0(2^n)
 class Solution {
 public:
     string countAndSay(int n) {
