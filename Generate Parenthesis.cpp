@@ -22,6 +22,7 @@ Constraints:
 ****************************
 class Solution {
 public:
+// time=exponential
     void findparen(vector<string> &ans,int open,int close,string res)
     {
         if(open==0 && close==0) // both closing and opening end
