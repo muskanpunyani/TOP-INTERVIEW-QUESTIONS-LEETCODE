@@ -44,11 +44,12 @@ public:
         /*
         basic intuition is put 1st elemt at last,2nd at 2nd last...etc.
         
-We iterate through the bit string of the input integer, from right to left (i.e. n = n >> 1). To retrieve the right-most bit of an integer, we apply the bit AND operation (n & 1).
+We iterate through the bit string of the input integer, from right to left (i.e. n = n >> 1). 
+To retrieve the right-most bit of an integer, we apply the bit AND operation (n & 1).
 
-    For each bit, we reverse it to the correct position (i.e. (n & 1) << power). Then we accumulate this reversed bit to the final result.
+For each bit, we reverse it to the correct position (i.e. (n & 1) << power). Then we accumulate this reversed bit to the final result.
 
-    When there is no more bits of one left (i.e. n == 0), we terminate the iteration.
+When there is no more bits of one left (i.e. n == 0), we terminate the iteration.
 
 
         */
@@ -57,7 +58,7 @@ We iterate through the bit string of the input integer, from right to left (i.e.
         {
             answer+=(n&1)<<power; //(n&1) retriving the rightmost bit
             //n&1=x x<<power=power*2^x ,i.e placing the rightmost bit at correct pos of rverse 
-            n=n>>1;     //iterating from right to left,right shift
+            n=n>>1;     //iterating from right to left,right shift ; n/2
             power=power-1;  // reduce power
         }
         return answer;
