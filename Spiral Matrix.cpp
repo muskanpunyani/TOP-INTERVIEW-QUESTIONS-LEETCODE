@@ -25,7 +25,7 @@ Constraints:
 *************************************************
 class Solution {
 public:
-    // time=0(n)
+    // time=0(n2)
     // space=0(1)
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
        vector<int> ans;
