@@ -50,7 +50,7 @@ public:
        {
            fast=fast->next;
        }
-        if(fast==NULL)   // if nth from begin is last
+        if(fast==NULL)   // if nth from begin is last then nth from end will be head,thus remove head
             return head->next;
         
         // slow points to nth node from end
