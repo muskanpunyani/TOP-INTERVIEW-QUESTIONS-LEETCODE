@@ -31,7 +31,7 @@ Constraints:
     beginWord != endWord
     All the strings in wordList are unique.
 
-
+// time=0(n*l) ; l is max string length
 *****************************
 class Solution {
 public:
